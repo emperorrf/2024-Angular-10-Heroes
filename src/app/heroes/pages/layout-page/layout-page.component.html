@@ -6,7 +6,8 @@
       <mat-icon>menu</mat-icon>
     </button>
     <span class="spacer"></span>
-    <button mat-button>Logout</button>
+    <span>{{user?.user}}</span>
+    <button mat-button (click)="onLogout()">Logout</button>
   </mat-toolbar>
 
   <mat-sidenav #sidenav mode="push" [ngStyle]="{ width: '250px' }">
